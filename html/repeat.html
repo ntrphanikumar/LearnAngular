@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+ <body>
+  <div ng-app="" ng-init="users=[{name:'Phani', age: 29}, {name:'Jeetu', age: 27}]">
+   <table>
+    <thead>
+     <tr>
+      <th>Name</th>
+      <th>Age</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr ng-repeat="user in users">
+      <td>{{user.name}}</td>
+      <td>{{user.age}}</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+ </body>
+</html>
